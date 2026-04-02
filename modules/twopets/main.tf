@@ -6,16 +6,16 @@ terraform {
   }
 }
 
-resource "random_pet" "mypet2a" {
+resource "random_pet" "mypet2a_v2" {
 }
 
-resource "random_pet" "mypet2b" {
+resource "random_pet" "mypet2b_v2" {
 }
 
-resource "random_id" "myid2ab" {
+resource "random_id" "myid2ab_v2" {
   keepers = {
-    petida = resource.random_pet.mypet2a.id
-    petidb = resource.random_pet.mypet2b.id
+    petida = resource.random_pet.mypet2a_v2.id
+    petidb = resource.random_pet.mypet2b_v2.id
   }
   byte_length = 8
 }

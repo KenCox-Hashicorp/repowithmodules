@@ -6,12 +6,12 @@ terraform {
   }
 }
 
-resource "random_pet" "mypet1" {
+resource "random_pet" "mypet1_v2" {
 }
 
-resource "random_id" "myid1" {
+resource "random_id" "myid1_v2" {
   keepers = {
-    petid = resource.random_pet.mypet1.id
+    petid = resource.random_pet.mypet1_v2.id
   }
   byte_length = 8
 }
