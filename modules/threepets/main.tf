@@ -6,6 +6,6 @@ terraform {
   }
 }
 
-resource "random_pet" "mypet3a_v3" {
+resource "random_pet" "three_random_pets" {
   count = 3
 }
